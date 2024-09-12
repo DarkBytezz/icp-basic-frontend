@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "secondDep_backend": {
+      "main": "src/secondDep_backend/main.mo",
+      "type": "motoko"
+    },
+    "secondDep_frontend": {
+      "dependencies": [
+        "secondDep_backend"
+      ],
+      "source": [
+        "src/secondDep_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "secondDep_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
